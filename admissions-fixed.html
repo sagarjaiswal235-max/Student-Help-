@@ -1,0 +1,1835 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PG Admissions 2026-27 | Student Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<!-- Google AdSense loader: replace with your publisher id and uncomment
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+-->
+<style>
+  :root {
+    --navy: #0a1628;
+    --teal: #006b75;
+    --teal-light: #00a3b4;
+    --gold: #c8922a;
+    --gold-light: #f0b94a;
+    --cream: #f5f0e8;
+    --white: #ffffff;
+    --gray-100: #f8f9fa;
+    --gray-200: #e9ecef;
+    --gray-400: #9ca3af;
+    --gray-700: #374151;
+    --text: #1a2332;
+    --shadow: 0 4px 24px rgba(0,0,0,0.10);
+    --shadow-lg: 0 12px 48px rgba(0,0,0,0.15);
+    --radius: 12px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--navy);
+    color: var(--text);
+    min-height: 100vh;
+  }
+
+  /* "?"? HEADER "?"? */
+  header {
+    background: linear-gradient(135deg, var(--navy) 60%, #0d2240 100%);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid var(--teal);
+    box-shadow: 0 2px 20px rgba(0,107,117,0.3);
+  }
+
+  .header-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 0 32px;
+    height: 72px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+  }
+
+  .logo-badge {
+    width: 44px; height: 44px;
+    background: var(--teal);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+  }
+
+  .logo-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+  }
+  .logo-text span { color: var(--gold-light); }
+  .logo-sub {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    color: rgba(255,255,255,0.55);
+    font-weight: 300;
+  }
+
+  nav {
+    display: flex;
+    gap: 4px;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+
+  nav a:hover, nav a.active {
+    color: white;
+    background: rgba(0,163,180,0.18);
+  }
+
+  nav a.active { color: var(--gold-light); }
+
+  /* "?"? HERO "?"? */
+  .hero {
+    background: linear-gradient(135deg, var(--navy) 0%, #0d2240 50%, #0a1e35 100%);
+    padding: 80px 32px 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0,163,180,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(200,146,42,0.15);
+    border: 1px solid rgba(200,146,42,0.35);
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 900;
+    color: white;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 span { color: var(--teal-light); }
+
+  .hero p {
+    font-size: 17px;
+    color: rgba(255,255,255,0.65);
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--gold-light);
+  }
+  .stat-label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 4px;
+  }
+
+  /* "?"? MAIN LAYOUT "?"? */
+  main {
+    background: var(--cream);
+    min-height: 100vh;
+  }
+
+  section {
+    display: none;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 48px 32px 80px;
+    animation: fadeIn 0.3s ease;
+  }
+
+  section.active { display: block; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+  }
+
+  .section-sub {
+    color: var(--gray-400);
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  /* Small top banner ad shown in each menu section */
+  .menu-ad-wrap {
+    margin-bottom: 20px;
+  }
+  .menu-ad-wrap-bottom {
+    margin-top: 24px;
+  }
+  .menu-ad {
+    width: 100%;
+    min-height: 72px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .menu-ad-placeholder {
+    border: 1.5px dashed var(--gray-200);
+    background: #f6fbfc;
+    color: var(--gray-400);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* "?"? CARDS "?"? */
+  .card {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+
+  .card-header {
+    background: var(--navy);
+    color: white;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .card-header h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .card-header .badge {
+    background: var(--teal);
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 100px;
+    font-weight: 500;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+
+  .card-body { padding: 24px; }
+
+  /* "?"? GRID "?"? */
+  .grid-2 { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 24px; }
+  .grid-3 { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+
+  /* "?"? TABLE "?"? */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    background: white;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+
+  thead tr {
+    background: var(--navy);
+    color: white;
+  }
+  thead th {
+    padding: 14px 18px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+  }
+
+  tbody tr:nth-child(even) { background: #f8fbfc; }
+  tbody tr:hover { background: #e8f7f9; }
+
+  tbody td {
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--gray-200);
+    vertical-align: middle;
+    color: var(--gray-700);
+  }
+
+  .pill {
+    display: inline-block;
+    background: #e0f5f7;
+    color: var(--teal);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin: 2px;
+    white-space: nowrap;
+  }
+
+  .pill-gold {
+    background: #fef3cd;
+    color: #92600a;
+  }
+
+  /* "?"? FILTERS "?"? */
+  .filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+
+  .filter-btn {
+    padding: 8px 18px;
+    border-radius: 100px;
+    border: 1.5px solid var(--gray-200);
+    background: white;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--gray-700);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .filter-btn:hover { border-color: var(--teal); color: var(--teal); }
+  .filter-btn.active {
+    background: var(--teal);
+    border-color: var(--teal);
+    color: white;
+  }
+
+  /* "?"? SEARCH "?"? */
+  .search-box {
+    position: relative;
+    margin-bottom: 28px;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 14px 20px 14px 48px;
+    border: 1.5px solid var(--gray-200);
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    background: white;
+    color: var(--text);
+    transition: border-color 0.2s;
+  }
+  .search-box input:focus {
+    outline: none;
+    border-color: var(--teal);
+  }
+  .search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gray-400);
+  }
+
+  /* "?"? ACCORDION "?"? */
+  details {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  summary {
+    padding: 18px 24px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--navy);
+    list-style: none;
+    background: white;
+    transition: background 0.2s;
+  }
+  summary:hover { background: #f0fafc; }
+  summary::after {
+    content: 'v';
+    margin-left: auto;
+    color: var(--teal);
+    transition: transform 0.2s;
+    font-size: 16px;
+  }
+  details[open] summary::after { transform: rotate(180deg); }
+
+  .details-body {
+    padding: 0 24px 24px;
+    color: var(--gray-700);
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* "?"? INFO BOXES "?"? */
+  .info-box {
+    border-left: 4px solid var(--teal);
+    background: #e8f7f9;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--navy);
+  }
+
+  .warning-box {
+    border-left: 4px solid var(--gold);
+    background: #fef9ec;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #6b4a00;
+  }
+
+  /* "?"? STEPS "?"? */
+  .steps { display: flex; flex-direction: column; gap: 0; }
+  .step {
+    display: flex;
+    gap: 20px;
+    position: relative;
+  }
+  .step::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 48px;
+    bottom: 0;
+    width: 2px;
+    background: var(--gray-200);
+  }
+  .step:last-child::before { display: none; }
+
+  .step-num {
+    width: 40px; height: 40px;
+    background: var(--teal);
+    color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    margin-top: 4px;
+  }
+
+  .step-content {
+    background: white;
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    box-shadow: var(--shadow);
+    flex: 1;
+    margin-bottom: 16px;
+  }
+  .step-content h4 {
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
+  .step-content p, .step-content li {
+    font-size: 14px;
+    color: var(--gray-700);
+    line-height: 1.7;
+  }
+
+  /* "?"? CALENDAR "?"? */
+  .timeline { display: flex; flex-direction: column; gap: 0; position: relative; }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--teal), var(--gold));
+  }
+
+  .tl-item {
+    display: flex;
+    gap: 0;
+    align-items: flex-start;
+    margin-bottom: 8px;
+  }
+
+  .tl-date {
+    width: 110px;
+    flex-shrink: 0;
+    text-align: right;
+    padding-right: 24px;
+    padding-top: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--teal);
+    font-family: 'DM Mono', monospace;
+  }
+
+  .tl-dot {
+    width: 14px; height: 14px;
+    background: var(--teal);
+    border-radius: 50%;
+    border: 2px solid var(--cream);
+    flex-shrink: 0;
+    margin-top: 14px;
+    position: relative;
+    z-index: 1;
+  }
+  .tl-dot.gold { background: var(--gold); }
+
+  .tl-card {
+    background: white;
+    border-radius: 10px;
+    padding: 14px 20px;
+    box-shadow: var(--shadow);
+    margin-left: 16px;
+    flex: 1;
+    margin-bottom: 8px;
+  }
+  .tl-card h4 { font-size: 14px; font-weight: 600; color: var(--navy); margin-bottom: 2px; }
+  .tl-card p { font-size: 13px; color: var(--gray-400); }
+
+  /* "?"? CUTOFF PLACEHOLDER "?"? */
+  .cutoff-placeholder {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 60px 40px;
+    text-align: center;
+    border: 2px dashed var(--gray-200);
+  }
+
+  .cutoff-placeholder .icon {
+    font-size: 56px;
+    margin-bottom: 16px;
+  }
+
+  .cutoff-placeholder h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+
+  .cutoff-placeholder p {
+    color: var(--gray-400);
+    font-size: 14px;
+    max-width: 400px;
+    margin: 0 auto 24px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    border: none;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .btn-primary {
+    background: var(--teal);
+    color: white;
+  }
+  .btn-primary:hover { background: var(--teal-light); transform: translateY(-1px); }
+
+  .btn-outline {
+    border: 1.5px solid var(--teal);
+    color: var(--teal);
+    background: transparent;
+  }
+  .btn-outline:hover { background: var(--teal); color: white; }
+
+  /* "?"? FEE TABLE "?"? */
+  .fee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+
+  .fee-card {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+
+  .fee-card-head {
+    padding: 16px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+  }
+
+  .fee-card-head.general { background: var(--navy); }
+  .fee-card-head.obc { background: var(--teal); }
+  .fee-card-head.sc { background: var(--gold); }
+
+  .fee-card-body { padding: 16px 20px; }
+  .fee-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 14px;
+    color: var(--gray-700);
+  }
+  .fee-row:last-child { border-bottom: none; }
+  .fee-amount { font-weight: 700; color: var(--navy); font-family: 'DM Mono', monospace; }
+
+  /* "?"? TAG "?"? */
+  .campus-tag {
+    display: inline-block;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+  .tag-mumbai { background: #dbeafe; color: #1e40af; }
+  .tag-hyd { background: #d1fae5; color: #065f46; }
+  .tag-guw { background: #ede9fe; color: #5b21b6; }
+  .tag-tulj { background: #fee2e2; color: #991b1b; }
+
+  /* "?"? RESPONSIVE "?"? */
+  @media (max-width: 768px) {
+    .header-inner { padding: 0 16px; }
+    nav a { padding: 6px 10px; font-size: 12px; }
+    section { padding: 32px 16px 60px; }
+    .hero { padding: 48px 16px; }
+    .timeline::before { left: 80px; }
+    .tl-date { width: 70px; font-size: 10px; }
+  }
+
+  /* "?"? NO RESULTS "?"? */
+  .no-results {
+    text-align: center;
+    padding: 40px;
+    color: var(--gray-400);
+    font-size: 15px;
+  }
+
+  hr.divider {
+    border: none;
+    border-top: 1px solid var(--gray-200);
+    margin: 24px 0;
+  }
+
+  ul.checklist { list-style: none; padding: 0; }
+  ul.checklist li { padding: 6px 0 6px 28px; position: relative; font-size: 14px; color: var(--gray-700); }
+  ul.checklist li::before { content: '✓'; position: absolute; left: 0; color: var(--teal); font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <div class="logo-badge">PG</div>
+      <div>
+        <div class="logo-text">PG Admissions <span>2026-27</span></div>
+        <div class="logo-sub">Student Information Portal</div>
+      </div>
+    </a>
+    <nav id="mainNav">
+      <a href="#" onclick="showSection('courses')" class="active">Courses</a>
+      <a href="#" onclick="showSection('departments')">Departments</a>
+      <a href="#" onclick="showSection('eligibility')">Eligibility</a>
+      <a href="#" onclick="showSection('testcodes')">Test Codes</a>
+      <a href="#" onclick="showSection('selection')">Selection</a>
+      <a href="#" onclick="showSection('calendar')">Calendar</a>
+      <a href="#" onclick="showSection('howto')">How to Apply</a>
+      <a href="#" onclick="showSection('fees')">Fees</a>
+      <a href="#" onclick="showSection('facilities')">Facilities</a>
+      <a href="#" onclick="showSection('placement')">Placement</a>
+      <a href="#" onclick="showSection('cutoff')">Cutoffs</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-tag">CUET-PG 2026 Based Admissions</div>
+  <h1>Your Complete Guide to<br><span>PG Admissions</span></h1>
+  <p>Everything you need to know about programmes, eligibility, test codes, selection criteria, and important dates - all in one place.</p>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-num">46+</div><div class="stat-label">Programmes</div></div>
+    <div class="stat"><div class="stat-num">4</div><div class="stat-label">Campuses</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-label">CUET-PG Based</div></div>
+    <div class="stat"><div class="stat-num">2026</div><div class="stat-label">Academic Year</div></div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main>
+
+<!-- ................................ COURSES ................................ -->
+<section id="courses" class="active">
+  <div class="section-title">All Programmes</div>
+  <div class="section-sub">Browse all 46+ PG programmes offered across TISS campuses for 2026-27</div>
+
+  <div class="filters" id="campusFilters">
+    <button class="filter-btn active" onclick="filterCourses('all', this)">All Campuses</button>
+    <button class="filter-btn" onclick="filterCourses('Mumbai', this)">Mumbai</button>
+    <button class="filter-btn" onclick="filterCourses('Hyderabad', this)">Hyderabad</button>
+    <button class="filter-btn" onclick="filterCourses('Guwahati', this)">Guwahati</button>
+    <button class="filter-btn" onclick="filterCourses('Tuljapur', this)">Tuljapur</button>
+  </div>
+
+  <div class="search-box">
+    <span class="search-icon">&#128269;</span>
+    <input type="text" id="courseSearch" placeholder="Search by programme name, school, or degree..." oninput="searchCourses()">
+  </div>
+
+  <div class="table-wrap">
+    <table id="coursesTable">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Programme</th>
+          <th>School / Centre</th>
+          <th>Degree</th>
+          <th>Intake</th>
+          <th>Campus</th>
+          <th>Test Code(s)</th>
+        </tr>
+      </thead>
+      <tbody id="coursesBody">
+      </tbody>
+    </table>
+    <div id="noResults" class="no-results" style="display:none">No programmes found matching your search.</div>
+  </div>
+</section>
+
+<!-- ................................ DEPARTMENTS ................................ -->
+<section id="departments">
+  <div class="section-title">Schools & Departments</div>
+  <div class="section-sub">Explore the academic schools across all TISS campuses</div>
+
+  <div class="grid-2" id="deptGrid"></div>
+</section>
+
+<!-- ................................ ELIGIBILITY ................................ -->
+<section id="eligibility">
+  <div class="section-title">Eligibility Criteria</div>
+  <div class="section-sub">Programme-specific eligibility requirements for admission</div>
+
+  <div class="info-box">
+    <strong>General Rule:</strong> Most programmes require a Bachelor's degree with Honours / 3-year or 4-year Bachelor's degree from a UGC-recognised university. Special programmes have additional criteria.
+  </div>
+
+  <details open>
+    <summary>General Eligibility (most MA/MSc programmes)</summary>
+    <div class="details-body">
+      <ul class="checklist">
+        <li>A Bachelor's degree with Honours / Honours with Research, OR</li>
+        <li>A 3-year / 6-semester Bachelor's degree, OR</li>
+        <li>A 4-year Bachelor's degree</li>
+      </ul>
+      <p style="margin-top:12px;color:#666">Until a candidate submits their degree certificate and final mark/grade sheet by the given date, admission offered will remain provisional.</p>
+      <p><strong>Applicable to:</strong> All MA Social Work specialisations, MA Development Studies, MA Women's Studies, MA Environment & Climate Change, MA Regulatory/Water/Urban Policy, MA Media & Cultural Studies, MA Education, MA Social Entrepreneurship, MA Labour Studies, MA/MSc Analytics, MA Livelihoods, MA Cities/Natural Resources/Public Policy & Governance, MA Ecology & Sustainable Development, MA Sociology & Social Anthropology, MA Peace & Conflict Studies, MLISc, MA/MSc Disaster Management, MA/MSc Disaster & Climate Risk Assessment.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Public Health Programmes (MPH)</summary>
+    <div class="details-body">
+      <ul class="checklist">
+        <li>Successfully completed a 3-year Bachelor's Degree in any discipline, OR</li>
+        <li>Bachelor's Degree in medicine, paramedical sciences, pharmacy, veterinary sciences, engineering, or law (4-year programmes), OR</li>
+        <li>Candidates who have successfully completed all requirements of their final year degree (including all examinations and internships)</li>
+      </ul>
+      <p style="margin-top:12px"><strong>Applicable to:</strong> MPH Health Administration, MPH Social Epidemiology, MPH Health Policy Economics & Finance (all Mumbai Campus)</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Applied Psychology (Clinical & Counselling Practice)</summary>
+    <div class="details-body">
+      <ul class="checklist">
+        <li>Full-time B.A./B.Sc. Honours in Psychology (regular mode), OR</li>
+        <li>Full-time B.A./B.Sc. General with major/minor in Psychology or up to 6 credits in psychology (regular mode), OR</li>
+        <li>Any Bachelor's Degree + University-recognised 1-year PG Diploma in Counselling (minimum 40 credits) - Distance/online diploma NOT accepted</li>
+      </ul>
+    </div>
+  </details>
+
+  <details>
+    <summary>Law Programmes (LL.M / Integrated MA+LLM)</summary>
+    <div class="details-body">
+      <ul class="checklist">
+        <li>3-Year LL.B. after Graduation (10+2+3) OR 5-year Integrated LL.B. (10+2+5) recognised by Bar Council of India</li>
+        <li>Minimum 50% marks in LL.B. aggregate (45% for SC/ST)</li>
+      </ul>
+      <p style="margin-top:12px"><strong>Applicable to:</strong> LL.M in Access to Justice (Mumbai), Integrated MA Public Policy & Governance + LLM (Hyderabad-Mumbai)</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>B.Ed - M.Ed (3-Year Integrated)</summary>
+    <div class="details-body">
+      <ul class="checklist">
+        <li>Undergraduate/PG degree in any academic discipline (Arts, Science, Commerce, Engineering, Medicine, Pharmacy, etc.) from UGC-recognised university</li>
+        <li>Admission to relevant Pedagogic Specialisation based on disciplinary major</li>
+        <li>Candidates with vocational/professional degrees advised to contact TISS prior to applying</li>
+      </ul>
+      <p style="margin-top:12px; color:#666">Programme is 3 years full-time with exit option after 2 years with B.Ed degree.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>M.Ed (2-Year Lateral Entry)</summary>
+    <div class="details-body">
+      <ul class="checklist">
+        <li>UG/PG degree in academic discipline (Arts, Science, Commerce, Engineering, Medicine, Pharmacy, etc.) from UGC-recognised university, AND</li>
+        <li>B.Ed / BEIEd / BABEd / BscBEd / ITEP degree from UGC-recognised university</li>
+      </ul>
+      <p style="margin-top:12px; color:#666">2-year full-time programme by Lateral Entry into B.Ed-M.Ed Programme.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ................................ TEST CODES ................................ -->
+<section id="testcodes">
+  <div class="section-title">CUET-PG Test Paper Codes</div>
+  <div class="section-sub">Find which CUET-PG test paper code is required for each programme</div>
+
+  <div class="warning-box">
+    s️ <strong>Important:</strong> Candidates must appear in the CUET-PG 2026 examination for the relevant test paper code(s) of the programme they wish to apply to. Where multiple codes are listed, candidates may appear in <strong>any one</strong>.
+  </div>
+
+  <div class="search-box">
+    <span class="search-icon">&#128269;</span>
+    <input type="text" id="codeSearch" placeholder="Search by programme name or test code..." oninput="searchCodes()">
+  </div>
+
+  <div class="table-wrap">
+    <table id="codesTable">
+      <thead>
+        <tr>
+          <th>Programme</th>
+          <th>Campus</th>
+          <th>Test Paper Code(s) - Choose Any One</th>
+        </tr>
+      </thead>
+      <tbody id="codesBody"></tbody>
+    </table>
+  </div>
+
+  <div style="margin-top:40px">
+    <div class="section-title" style="font-size:22px; margin-bottom:16px">Test Code Reference</div>
+    <div class="grid-3" id="codeRef"></div>
+  </div>
+</section>
+
+<!-- ................................ SELECTION ................................ -->
+<section id="selection">
+  <div class="section-title">Selection Criteria & Admission Rules</div>
+  <div class="section-sub">How the merit list is prepared and what rules apply</div>
+
+  <div class="info-box">
+    <strong>Admission to all PG programmes is based on CUET-PG 2026 score (weightage 100%).</strong><br>
+    There will be NO Extempore Reflection Test / Group Discussions / Online Personal Interviews.
+  </div>
+
+  <div class="grid-2" style="margin-bottom:32px">
+    <div class="card">
+      <div class="card-header"><h3>Merit List Preparation</h3></div>
+      <div class="card-body">
+        <ul class="checklist">
+          <li><strong>Open Merit List (OML):</strong> Prepared based on CUET-PG score without considering reservation category</li>
+          <li><strong>Category-wise Merit List (CML):</strong> Prepared after OML for reserved seats as per GoI/UGC norms</li>
+          <li><strong>Tie-breaking:</strong> In case of tie, higher CGPA of Bachelor's Degree is used</li>
+          <li><strong>Max programmes:</strong> Candidates can apply to maximum THREE programmes</li>
+          <li>Candidates admitted to only ONE programme (where fee is paid)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><h3>Reservation Policy (Mumbai/Tuljapur/Hyderabad)</h3></div>
+      <div class="card-body">
+        <ul class="checklist">
+          <li><strong>SC:</strong> 15% of total seats</li>
+          <li><strong>ST:</strong> 7.5% of total seats</li>
+          <li><strong>OBC (Non-Creamy Layer):</strong> 27% of total seats</li>
+          <li><strong>EWS:</strong> 10% of total seats</li>
+          <li><strong>PWD (Supernumerary):</strong> 5% of seats</li>
+          <li><strong>Armed Forces (Supernumerary):</strong> 5% of seats</li>
+          <li><strong>Kashmiri Migrants (KM):</strong> Supernumerary seats with 10% cut-off relaxation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><h3>Guwahati Campus (Special Policy)</h3></div>
+      <div class="card-body">
+        <ul class="checklist">
+          <li><strong>66% of seats</strong> reserved for candidates from 8 North-Eastern states</li>
+          <li>Specific quota allotted for each of the 8 states</li>
+          <li>Seat allotment governed by reservation policy of respective state</li>
+          <li><strong>34% of seats</strong> for candidates from rest of India (GoI reservation policy applies)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header"><h3>Deputed & International Candidates</h3></div>
+      <div class="card-body">
+        <ul class="checklist">
+          <li>Officers deputed by Central/State Governments may be admitted via Written Test / Online Personal Interview</li>
+          <li>CUET score NOT mandatory for deputed/sponsored candidates</li>
+          <li>Seats for deputed candidates treated as supernumerary</li>
+          <li>International candidates apply through TISS Office for International Affairs (OIA)</li>
+          <li>All foreign nationals eligible; seats are supernumerary</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title" style="font-size:22px; margin-bottom:16px">Key Admission Rules</div>
+  <div class="grid-2">
+    <details>
+      <summary>Document Verification Rules</summary>
+      <div class="details-body">
+        <ul class="checklist">
+          <li>All selected candidates must report to campus for document verification as per admission timeline</li>
+          <li>Failure to report forfeits admission - no correspondence will be entertained</li>
+          <li>Original mark sheets/grade sheets/certificates must be produced</li>
+          <li>Only attested mark sheets downloaded from the internet are accepted</li>
+          <li>Migration Certificates must be submitted by 31st October 2026</li>
+          <li>Currently employed candidates must submit leave sanction/relieving order</li>
+          <li>Medical check-up by TISS Medical Officer is compulsory</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Cancellation of Admission</summary>
+      <div class="details-body">
+        <ul class="checklist">
+          <li>Student does not fulfil eligibility requirements</li>
+          <li>Student used fraudulent means to secure admission</li>
+          <li>Student made false/incorrect information in application</li>
+          <li>Discrepancy found between application details and documents</li>
+        </ul>
+        <p style="margin-top:12px; color:#666">Candidates must join the programme within 7 days from programme commencement or 7 days of fee payment, whichever is later.</p>
+      </div>
+    </details>
+    <details>
+      <summary>Application Fee Payment</summary>
+      <div class="details-body">
+        <ul class="checklist">
+          <li>Payment via Credit Card / Debit Card / NEFT / UPI / Net Banking only</li>
+          <li>Demand drafts and pay orders are NOT accepted</li>
+          <li>Application fee once paid is NON-REFUNDABLE</li>
+          <li>Filling more than one application form leads to cancellation of all applications</li>
+        </ul>
+        <div style="margin-top:16px">
+          <table style="font-size:13px">
+            <thead><tr><th>Programmes</th><th>General</th><th>OBC/EWS</th><th>SC/ST (GoI-PMS eligible)</th></tr></thead>
+            <tbody>
+              <tr><td>1 Programme</td><td>Rs 900 + charges</td><td>Rs 600 + charges</td><td>Rs 500 + charges</td></tr>
+              <tr><td>2 Programmes</td><td>Rs 1,800 + charges</td><td>Rs 1,200 + charges</td><td>Rs 1,000 + charges</td></tr>
+              <tr><td>3 Programmes</td><td>Rs 2,700 + charges</td><td>Rs 1,800 + charges</td><td>Rs 1,500 + charges</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </details>
+    <details>
+      <summary>Fee Refund Policy</summary>
+      <div class="details-body">
+        <table style="font-size:13px">
+          <thead><tr><th>Withdrawal submitted</th><th>Refund %</th></tr></thead>
+          <tbody>
+            <tr><td>15+ days before last admission date</td><td><strong>100%</strong> (minus ...5% processing fee, max Rs 5,000)</td></tr>
+            <tr><td>Less than 15 days before last admission date</td><td><strong>90%</strong></td></tr>
+            <tr><td>Up to 15 days after last admission date</td><td><strong>80%</strong></td></tr>
+            <tr><td>16-30 days after last admission date</td><td><strong>50%</strong></td></tr>
+            <tr><td>More than 30 days after last admission date</td><td><strong>0%</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ................................ CALENDAR ................................ -->
+<section id="calendar">
+  <div class="section-title">Admission Calendar 2026</div>
+  <div class="section-sub">Important dates for TISS PG Admissions 2026-27</div>
+
+  <div class="warning-box">
+    <strong>Note:</strong> The official admission calendar is published on <a href="https://admissions.tiss.ac.in/view/6/admissions/ma-admissions/admission-calendar/" target="_blank" style="color:var(--gold)">admissions.tiss.ac.in</a>. The dates below are indicative based on the CUET-PG 2026 cycle. Always verify from the official site.
+  </div>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-date">Jan-Feb 2026</div>
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <h4>CUET-PG 2026 Registration</h4>
+        <p>Register on NTA portal (nta.ac.in) and choose relevant test paper codes for TISS programmes</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Mar-Apr 2026</div>
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <h4>CUET-PG 2026 Examination</h4>
+        <p>Appear for CUET-PG 2026 examination as per NTA schedule</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Apr-May 2026</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-card">
+        <h4>TISS Application Window</h4>
+        <p>Apply to TISS PG programmes via admissions.tiss.ac.in. Upload required documents. Pay application fee. Maximum 3 programmes per candidate.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">May 2026</div>
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <h4>CUET-PG Score Declaration</h4>
+        <p>NTA releases CUET-PG 2026 scores on nta.ac.in</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">May-Jun 2026</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-card">
+        <h4>Pre-Admission Counselling</h4>
+        <p>Online counselling sessions by TISS schools. EOC conducts sessions specifically for SC/ST/OBC(NC) candidates.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Jun 2026</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-card">
+        <h4>Merit List & Offer of Admission</h4>
+        <p>Open Merit List (OML) and Category-wise Merit List published on TISS admissions portal</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Jun-Jul 2026</div>
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <h4>Fee Payment & Admission Confirmation</h4>
+        <p>Selected candidates pay programme fee to confirm admission. Waitlist/subsequent merit lists may be released.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Jul 2026</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-card">
+        <h4>Document Verification at Campus</h4>
+        <p>Report to respective TISS campus with original documents for verification</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">Jul-Aug 2026</div>
+      <div class="tl-dot"></div>
+      <div class="tl-card">
+        <h4>Commencement of Programme</h4>
+        <p>Academic year 2026-27 begins. Candidates must join within 7 days of commencement.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-date">31 Oct 2026</div>
+      <div class="tl-dot gold"></div>
+      <div class="tl-card">
+        <h4>Migration Certificate Deadline</h4>
+        <p>Last date to submit original Migration Certificate from last attended institution</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px; text-align:center">
+    <a href="https://admissions.tiss.ac.in/view/6/admissions/ma-admissions/admission-calendar/" target="_blank" class="btn btn-primary">
+      View Official Admission Calendar
+    </a>
+  </div>
+</section>
+
+<!-- ................................ HOW TO APPLY ................................ -->
+<section id="howto">
+  <div class="section-title">How to Apply</div>
+  <div class="section-sub">Step-by-step guide to fill the TISS PG application form</div>
+
+  <div class="info-box">
+    Applications are submitted online at <a href="https://admissions.tiss.ac.in" target="_blank" style="color:var(--teal); font-weight:600">admissions.tiss.ac.in</a>. You need your CUET-PG 2026 registration details.
+  </div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Register for CUET-PG 2026</h4>
+        <p>Visit <strong>nta.ac.in</strong> and register for CUET-PG 2026. Select the relevant test paper code(s) for the TISS programme(s) you wish to apply to. CUET score is the sole basis for admission (100% weightage).</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Appear for CUET-PG Examination</h4>
+        <p>Sit for the CUET-PG 2026 examination as per NTA's schedule and your chosen test paper code(s).</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Visit TISS Admissions Portal</h4>
+        <p>Go to <strong>admissions.tiss.ac.in</strong> when the TISS application window opens. Read all programme descriptions and eligibility criteria carefully before choosing programmes.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Fill the Online Application Form</h4>
+        <p>Select up to <strong>THREE programmes</strong> in ONE application form. Do NOT fill more than one form - all applications will be cancelled if you do. Provide the same mobile number and email used during CUET-PG 2026 registration.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>Upload Required Documents</h4>
+        <p>Scan and upload the following documents as per your category:</p>
+        <ul class="checklist" style="margin-top:10px">
+          <li><strong>All candidates:</strong> Recent photograph + Signature</li>
+          <li><strong>EWS:</strong> Income & Asset Certificate for FY 2025-26 (annual family income &lt;Rs 8 lakh)</li>
+          <li><strong>SC/ST:</strong> Caste certificate + Income Certificate for FY 2025-26</li>
+          <li><strong>OBC(NC):</strong> OBC Non-Creamy Layer certificate issued <em>after 01-04-2026</em> (must be in Central Govt format) + Income Certificate</li>
+          <li><strong>PWD:</strong> Disability certificate (...40% disability) + UDID Card</li>
+          <li><strong>KM:</strong> Kashmiri Migrant certificate from Relief/Rehabilitation Commissioner</li>
+          <li><strong>Armed Forces:</strong> Certificate issued by Zila/Rajya/Kendriya Sainik Board</li>
+        </ul>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">6</div>
+      <div class="step-content">
+        <h4>Pay the Application Fee</h4>
+        <p>Pay online via Credit Card / Debit Card / NEFT / UPI / Net Banking. Application fee is non-refundable. Confirm all data before payment - changes are not allowed after submission.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">7</div>
+      <div class="step-content">
+        <h4>Check Admission Portal Periodically</h4>
+        <p>Monitor the TISS admissions portal for merit list publication, waitlist updates, and further instructions. Merit list, waitlist, and all selection statuses are displayed on the portal.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">8</div>
+      <div class="step-content">
+        <h4>Pay Admission Fee & Confirm Seat</h4>
+        <p>If selected, pay the programme fee as per the admission portal instructions to confirm your seat. You will be admitted to only ONE programme.</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">9</div>
+      <div class="step-content">
+        <h4>Report to Campus for Document Verification</h4>
+        <p>Report to your respective TISS campus on the stipulated date with original documents. Undergo medical check-up by TISS Medical Officer. Submit Migration Certificate (or undertaking to submit by 31 Oct 2026).</p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px; text-align:center">
+    <a href="https://admissions.tiss.ac.in/view/6/admissions/ma-admissions/how-to-apply/" target="_blank" class="btn btn-primary" style="margin-right:12px">
+      Official Application Instructions
+    </a>
+    <a href="https://admissions.tiss.ac.in" target="_blank" class="btn btn-outline">
+      Admissions Portal
+    </a>
+  </div>
+</section>
+
+<!-- ................................ FEES ................................ -->
+<section id="fees">
+  <div class="section-title">Fees & Scholarships</div>
+  <div class="section-sub">Application fees, programme fees, and financial assistance</div>
+
+  <div class="section-title" style="font-size:20px; margin-bottom:16px; margin-top:0">Application Fees</div>
+  <div class="fee-grid">
+    <div class="fee-card">
+      <div class="fee-card-head general">General Category</div>
+      <div class="fee-card-body">
+        <div class="fee-row"><span>1 Programme</span><span class="fee-amount">Rs 900 + bank charges</span></div>
+        <div class="fee-row"><span>2 Programmes</span><span class="fee-amount">Rs 1,800 + bank charges</span></div>
+        <div class="fee-row"><span>3 Programmes</span><span class="fee-amount">Rs 2,700 + bank charges</span></div>
+      </div>
+    </div>
+    <div class="fee-card">
+      <div class="fee-card-head obc">OBC (NC) / EWS</div>
+      <div class="fee-card-body">
+        <div class="fee-row"><span>1 Programme</span><span class="fee-amount">Rs 600 + bank charges</span></div>
+        <div class="fee-row"><span>2 Programmes</span><span class="fee-amount">Rs 1,200 + bank charges</span></div>
+        <div class="fee-row"><span>3 Programmes</span><span class="fee-amount">Rs 1,800 + bank charges</span></div>
+      </div>
+    </div>
+    <div class="fee-card">
+      <div class="fee-card-head sc">SC/ST (GoI-PMS Eligible)</div>
+      <div class="fee-card-body">
+        <div class="fee-row"><span>1 Programme</span><span class="fee-amount">Rs 500 + bank charges</span></div>
+        <div class="fee-row"><span>2 Programmes</span><span class="fee-amount">Rs 1,000 + bank charges</span></div>
+        <div class="fee-row"><span>3 Programmes</span><span class="fee-amount">Rs 1,500 + bank charges</span></div>
+        <div class="fee-row"><span>Reduced fee (income &lt;limit)</span><span class="fee-amount">Rs 250/programme</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title" style="font-size:20px; margin-bottom:16px">Fee Structure for SC/ST GoI-PMS Students (Basic Fees - All Masters)</div>
+  <div class="table-wrap" style="margin-bottom:32px">
+    <table>
+      <thead>
+        <tr><th>Component</th><th>Semester I</th><th>Semester II</th><th>Semester III</th><th>Semester IV</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Health Care Fund</td><td>Rs 2,200</td><td>-</td><td>Rs 2,200</td><td>-</td></tr>
+        <tr><td>Students' Union Fund</td><td>Rs 550</td><td>Rs 550</td><td>Rs 550</td><td>Rs 550</td></tr>
+        <tr><td>Other Charges (ID Card, Convocation)</td><td>Rs 2,750</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr><td>Alumni Fund</td><td>-</td><td>Rs 550</td><td>-</td><td>-</td></tr>
+        <tr><td>Caution Deposit</td><td>Rs 2,750</td><td>-</td><td>-</td><td>-</td></tr>
+        <tr style="font-weight:700; background:#e8f7f9"><td><strong>Total Course Fee</strong></td><td>Rs 8,250</td><td>Rs 1,100</td><td>Rs 2,750</td><td>Rs 550</td></tr>
+        <tr><td>Hostel &amp; Electricity Charges</td><td>Rs 18,000</td><td>Rs 18,000</td><td>Rs 18,000</td><td>Rs 18,000</td></tr>
+        <tr><td>Dining Hall Advance</td><td>Rs 20,000</td><td>Rs 20,000</td><td>Rs 20,000</td><td>Rs 20,000</td></tr>
+        <tr style="font-weight:700; background:#e8f7f9"><td><strong>Total Hostel+Dining</strong></td><td>Rs 38,000</td><td>Rs 38,000</td><td>Rs 38,000</td><td>Rs 38,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:13px; color:var(--gray-400); margin-bottom:32px">* This fee structure applies only to SC/ST GoI-PMS eligible students paying basic fees. Not applicable to self-financing programmes or B.Ed-M.Ed programme.</p>
+
+  <div class="section-title" style="font-size:20px; margin-bottom:16px">Scholarships & Financial Aid</div>
+  <div class="grid-2">
+    <details open>
+      <summary>GoI Post-Matric Scholarship (GoI-PMS)</summary>
+      <div class="details-body">
+        <ul class="checklist">
+          <li>SC/ST candidates with parental/guardian income &lt;Rs 2.5 lakhs/year are eligible</li>
+          <li>Pay basic fees initially; scholarship from State Government credited via DBT</li>
+          <li>OBC(NC) candidates with parental income &lt;Rs 1 lakh/year: processed by SC/ST &amp; EO Cell</li>
+          <li>Scholarship applications must be filled ON TIME as per State Government procedures</li>
+          <li>Failure to fill GoI-PMS form means full programme fees must be paid</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Educational Loans</summary>
+      <div class="details-body">
+        <ul class="checklist">
+          <li>TISS has arrangements with nationalized banks for educational loans</li>
+          <li>Office of Student Affairs coordinates the process</li>
+          <li>Contact TISS Student Affairs office for support</li>
+          <li>Obtaining loans is the sole responsibility of the candidate</li>
+          <li>Admissions Helpline: <strong>022-25525252</strong></li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Fee Exemption for Employees</summary>
+      <div class="details-body">
+        <ul class="checklist">
+          <li>Serving permanent TISS employees, their spouses, and up to two children are exempt from tuition fees</li>
+          <li>Exemption NOT applicable for self-financing programmes</li>
+        </ul>
+      </div>
+    </details>
+    <details>
+      <summary>Required Documents for GoI-PMS</summary>
+      <div class="details-body">
+        <ul class="checklist">
+          <li>Link Saving Bank Account with Aadhaar Card (Aadhaar-Enabled Account / AEA)</li>
+          <li>Link Aadhaar to mobile number</li>
+          <li>After joining: Submit AEA Passbook copy, Mobile No., Email ID, self-attested Aadhaar copy to SC/ST &amp; EO Cell</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ................................ CUTOFF ................................ -->
+<!-- FACILITIES -->
+<section id="facilities">
+  <div class="section-title">On Campus Facilities</div>
+  <div class="section-sub">Student support and campus facilities</div>
+
+  <div class="card">
+    <div class="card-header">
+      <h3>Official Facilities Overview</h3>
+      <span class="badge">Official</span>
+    </div>
+    <div class="card-body">
+      <p style="font-size:14px; color:var(--gray-700); margin-bottom:14px">
+        Explore the official TISS page for hostels, student support, and other campus facilities.
+      </p>
+      <a
+        class="btn btn-primary"
+        href="https://www.tiss.ac.in/view/6/OIA/Support/on-campus-facilities/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open On Campus Facilities (Overview)
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PLACEMENT -->
+<section id="placement">
+  <div class="section-title">Placement Brochures</div>
+  <div class="section-sub">Course-wise placement statistics and brochures</div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Course / School</th>
+          <th>Placement Brochure</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>SHSS (Social Sciences and Humanities)</td>
+          <td><a href="https://tiss.ac.in/uploads/Brochure_SHSS_TISS.pdf" target="_blank" rel="noopener noreferrer">Brochure_SHSS_TISS.pdf</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>SOHS (School of Health System Studies)</td>
+          <td><a href="https://tiss.ac.in/uploads/SOHS_Broucher_compressed.pdf" target="_blank" rel="noopener noreferrer">SOHS (1).pdf</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>School of Social Work (D2)</td>
+          <td><a href="https://tiss.ac.in/uploads/Placement_SSW.pdf" target="_blank" rel="noopener noreferrer">placement brochure D2</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>MA in Education (2020-22)</td>
+          <td><a href="https://tiss.ac.in/uploads/files/Placement_Brochure_M.A._in_Education_2020-22-_New.pdf" target="_blank" rel="noopener noreferrer">Brochure.indd</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>MA in Development Studies (Batch 2024)</td>
+          <td><a href="https://www.tiss.ac.in/uploads/files/TISS_MA_DS_Placement_Brochure_2024_compressed.pdf" target="_blank" rel="noopener noreferrer">Placement Brochure Batch'24</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+<section id="cutoff">
+  <div class="section-title">Programme-wise Cutoffs</div>
+  <div class="section-sub">Historical cutoff scores by programme and category</div>
+
+  <div class="cutoff-placeholder">
+    <div class="icon">Cutoff</div>
+    <h3>Upload Excel Data to View Cutoffs</h3>
+    <p>Upload the programme-wise cutoff Excel file to populate this section with category-wise cutoff scores for each programme.</p>
+    <input type="file" id="excelFile" accept=".xlsx,.xls,.csv" style="display:none" onchange="loadExcel(event)">
+    <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap">
+      <button class="btn btn-primary" onclick="document.getElementById('excelFile').click()">
+        Upload Excel / CSV File
+      </button>
+      <button class="btn btn-outline" onclick="loadSampleCutoff()">
+        Load Sample Data
+      </button>
+    </div>
+  </div>
+
+  <div id="cutoffTableWrap" style="display:none; margin-top:32px">
+    <div class="info-box">✓  Cutoff data loaded. Showing programme-wise cutoff scores.</div>
+    <div class="search-box" style="margin-top:16px">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="cutoffSearch" placeholder="Search programme or category..." oninput="searchCutoff()">
+    </div>
+    <div class="table-wrap">
+      <table id="cutoffTable">
+        <thead id="cutoffHead"></thead>
+        <tbody id="cutoffBody"></tbody>
+      </table>
+    </div>
+    <div style="margin-top:16px; text-align:right">
+      <button class="btn btn-outline" onclick="clearCutoff()">Y-'️ Clear Data</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<script>
+// ..................................................
+// DATA
+// ..................................................
+
+const programmes = [
+  // MUMBAI - School of Social Work
+  { id:1, name:'MA Social Work (Children and Families)', school:'School of Social Work', degree:'MA', intake:30, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  { id:2, name:'MA Social Work (Criminology and Justice)', school:'School of Social Work', degree:'MA', intake:30, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  { id:3, name:'MA Social Work (Community Organisation and Development Practice)', school:'School of Social Work', degree:'MA', intake:30, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  { id:4, name:'MA Social Work (Disability Studies and Action)', school:'School of Social Work', degree:'MA', intake:20, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  { id:5, name:'MA Social Work (Dalit and Tribal Studies and Action)', school:'School of Social Work', degree:'MA', intake:25, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  { id:6, name:'MA Social Work (Mental Health)', school:'School of Social Work', degree:'MA', intake:25, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  { id:7, name:'MA Social Work (Public Health)', school:'School of Social Work', degree:'MA', intake:25, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  { id:8, name:'MA Social Work (Livelihoods and Social Entrepreneurship)', school:'School of Social Work', degree:'MA', intake:20, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  { id:9, name:'MA Social Work (Women-Centred Practice)', school:'School of Social Work', degree:'MA', intake:20, campus:'Mumbai', codes:['COQP11','HUQP18','HUQP20','HUQP21','HUQP22'] },
+  // MUMBAI - Management & Labour Studies
+  { id:10, name:'MA Social Entrepreneurship', school:'School of Management and Labour Studies', degree:'MA', intake:35, campus:'Mumbai', codes:['COQP10','COQP12','HUQP21','HUQP22'] },
+  { id:11, name:'MA Labour Studies and Practice', school:'School of Management and Labour Studies', degree:'MA', intake:25, campus:'Mumbai', codes:['COQP10','COQP12','HUQP06','HUQP21','HUQP22'] },
+  { id:12, name:'MA/MSc Analytics', school:'School of Management and Labour Studies', degree:'MA/MSc', intake:35, campus:'Mumbai', codes:['COQP10','COQP12','SCQP09','SCQP27'] },
+  // MUMBAI - Disaster Studies
+  { id:13, name:'MA/MSc Disaster Management', school:'Jamsetji Tata School of Disaster Studies', degree:'MA/MSc', intake:40, campus:'Mumbai', codes:['COQP09','COQP11','COQP12'] },
+  { id:14, name:'MA/MSc Disaster and Climate Risk Assessment for Sustainability', school:'Jamsetji Tata School of Disaster Studies', degree:'MA/MSc', intake:20, campus:'Mumbai', codes:['COQP12'] },
+  // MUMBAI - Development Studies
+  { id:15, name:'MA Development Studies', school:'School of Development Studies', degree:'MA', intake:65, campus:'Mumbai', codes:['COQP10','COQP11','HUQP02','HUQP08','HUQP09','HUQP16','HUQP18','HUQP22'] },
+  { id:16, name:"MA Women's Studies", school:'School of Development Studies', degree:'MA', intake:25, campus:'Mumbai', codes:['COQP10','COQP11','HUQP02','HUQP08','HUQP09','HUQP16','HUQP18','HUQP22'] },
+  // MUMBAI - Education
+  { id:17, name:'MA Education', school:'School of Education', degree:'MA', intake:30, campus:'Mumbai', codes:['COQP03','COQP11','COQP16'] },
+  { id:18, name:'B.Ed-M.Ed (Integrated)', school:'School of Education', degree:'BEd-MEd', intake:50, campus:'Mumbai', codes:['COQP03','COQP04','COQP06','COQP07','COQP11','COQP16'] },
+  { id:19, name:'M.Ed (2-Year Lateral Entry)', school:'School of Education', degree:'MEd', intake:15, campus:'Mumbai', codes:['COQP11','COQP15','COQP16'] },
+  // MUMBAI - Habitat Studies
+  { id:20, name:'MA/MSc Environment, Climate Change and Sustainability Studies', school:'School of Habitat Studies', degree:'MA/MSc', intake:25, campus:'Mumbai', codes:['COQP09','COQP10','COQP11','HUQP08','SCQP11'] },
+  { id:21, name:'MA/MSc Regulatory Policy and Governance', school:'School of Habitat Studies', degree:'MA/MSc', intake:25, campus:'Mumbai', codes:['COQP10','COQP11','COQP14','HUQP18','SCQP13'] },
+  { id:22, name:'MA/MSc Water Policy and Governance', school:'School of Habitat Studies', degree:'MA/MSc', intake:20, campus:'Mumbai', codes:['COQP02','COQP09','COQP11','SCQP11','SCQP26'] },
+  { id:23, name:'MA/MSc Urban Policy and Governance', school:'School of Habitat Studies', degree:'MA/MSc', intake:25, campus:'Mumbai', codes:['COQP10','COQP11','HUQP08','HUQP22','SCQP04'] },
+  // MUMBAI - Health System Studies
+  { id:24, name:'MPH Health Administration', school:'School of Health System Studies', degree:'MPH', intake:40, campus:'Mumbai', codes:['COQP11','COQP19','COQP22'] },
+  { id:25, name:'MPH Social Epidemiology', school:'School of Health System Studies', degree:'MPH', intake:30, campus:'Mumbai', codes:['COQP11','COQP19'] },
+  { id:26, name:'MPH Health Policy, Economics and Finance', school:'School of Health System Studies', degree:'MPH', intake:30, campus:'Mumbai', codes:['COQP10','COQP11','COQP19'] },
+  // MUMBAI - Human Ecology
+  { id:27, name:'MA Applied Psychology (Clinical and Counselling Practice)', school:'School of Human Ecology', degree:'MA', intake:30, campus:'Mumbai', codes:['HUQP20'] },
+  // MUMBAI - Law
+  { id:28, name:'LL.M in Access to Justice', school:'School of Law, Rights and Constitutional Governance', degree:'LLM', intake:40, campus:'Mumbai', codes:['COQP14'] },
+  // MUMBAI - Media & Cultural Studies
+  { id:29, name:'MA Media and Cultural Studies', school:'School of Media and Cultural Studies', degree:'MA', intake:30, campus:'Mumbai', codes:['COQP17'] },
+  // MUMBAI - Library
+  { id:30, name:'Master of Library and Information Science (MLISc)', school:'Centre for Library and Information Management Studies', degree:'MLISc', intake:15, campus:'Mumbai', codes:['COQP11'] },
+  // TULJAPUR
+  { id:31, name:'MA Social Work (Rural Development)', school:'School of Rural Development', degree:'MA', intake:40, campus:'Tuljapur', codes:['HUQP20','HUQP21','HUQP22'] },
+  // HYDERABAD
+  { id:32, name:'MA Education', school:'School of Educational Studies', degree:'MA', intake:30, campus:'Hyderabad', codes:['COQP03','COQP11','COQP15'] },
+  { id:33, name:'MA Livelihoods (Gender and Development)', school:'School of Gender and Livelihoods', degree:'MA', intake:25, campus:'Hyderabad', codes:['COQP11','HUQP06','HUQP18','HUQP22'] },
+  { id:34, name:'MA Livelihoods (Rural Development)', school:'School of Gender and Livelihoods', degree:'MA', intake:25, campus:'Hyderabad', codes:['COQP11','HUQP06','HUQP18','HUQP22'] },
+  { id:35, name:'MA Cities and Governance', school:'School of Public Policy and Governance', degree:'MA', intake:30, campus:'Hyderabad', codes:['COQP10','COQP11','HUQP18','HUQP22'] },
+  { id:36, name:'MA Natural Resources and Governance', school:'School of Public Policy and Governance', degree:'MA', intake:30, campus:'Hyderabad', codes:['COQP10','COQP11','HUQP18','HUQP22'] },
+  { id:37, name:'MA Public Policy and Governance', school:'School of Public Policy and Governance', degree:'MA', intake:30, campus:'Hyderabad', codes:['COQP10','COQP11','HUQP18','HUQP22'] },
+  { id:38, name:'MA Public Policy and Law', school:'School of Public Policy and Governance', degree:'MA', intake:15, campus:'Hyderabad', codes:['COQP10','COQP11','HUQP18','HUQP22'] },
+  { id:39, name:'Integrated MA Public Policy & Governance + LLM Law and Social Policy', school:'School of Public Policy and Governance', degree:'MA+LLM', intake:15, campus:'Hyderabad', codes:['COQP14'] },
+  // GUWAHATI
+  { id:40, name:'MA Ecology, Environment and Sustainable Development', school:'School of Social Sciences and Humanities', degree:'MA', intake:25, campus:'Guwahati', codes:['COQP09','COQP11','SCQP11'] },
+  { id:41, name:'MA Sociology and Social Anthropology', school:'School of Social Sciences and Humanities', degree:'MA', intake:25, campus:'Guwahati', codes:['COQP11','HUQP18','HUQP22'] },
+  { id:42, name:'MA Peace and Conflict Studies', school:'School of Social Sciences and Humanities', degree:'MA', intake:25, campus:'Guwahati', codes:['COQP11','HUQP18','HUQP22'] },
+  { id:43, name:'MA Social Work (Community Organisation and Development Practice)', school:'School of Social Work', degree:'MA', intake:25, campus:'Guwahati', codes:['COQP11','HUQP18','HUQP21'] },
+  { id:44, name:'MA Social Work (Livelihoods and Social Entrepreneurship)', school:'School of Social Work', degree:'MA', intake:25, campus:'Guwahati', codes:['COQP11','HUQP18','HUQP21'] },
+  { id:45, name:'MA Social Work (Counselling)', school:'School of Social Work', degree:'MA', intake:25, campus:'Guwahati', codes:['COQP11','HUQP20','HUQP21'] },
+  { id:46, name:'MA Social Work (Public Health)', school:'School of Social Work', degree:'MA', intake:25, campus:'Guwahati', codes:['COQP11','HUQP20','HUQP21'] },
+];
+
+const codeDescriptions = {
+  'COQP02': 'Geography',
+  'COQP03': 'Education',
+  'COQP04': 'Social Science Teaching',
+  'COQP06': 'Science Teaching',
+  'COQP07': 'Languages Teaching',
+  'COQP09': 'Environmental Science',
+  'COQP10': 'Political Science / Public Policy',
+  'COQP11': 'Social Work / Social Sciences (General)',
+  'COQP12': 'Management / Social Sciences',
+  'COQP14': 'Law / LLB',
+  'COQP15': 'Education (B.Ed/M.Ed)',
+  'COQP16': 'Education (Curriculum)',
+  'COQP17': 'Mass Communication / Media',
+  'COQP19': 'Public Health',
+  'COQP22': 'Health Administration',
+  'HUQP02': 'Economics',
+  'HUQP06': 'Labour Studies',
+  'HUQP08': 'Sociology',
+  'HUQP09': 'Anthropology',
+  'HUQP16': 'History',
+  'HUQP18': 'Social Work (General)',
+  'HUQP20': 'Psychology / Counselling',
+  'HUQP21': 'Social Work (Applied)',
+  'HUQP22': 'Social Sciences (Humanities)',
+  'SCQP04': 'Urban Studies / Planning',
+  'SCQP09': 'Statistics / Data Science',
+  'SCQP11': 'Environmental Science (Science)',
+  'SCQP13': 'Regulatory Policy (Science)',
+  'SCQP26': 'Water Resource Management',
+  'SCQP27': 'Analytics / Mathematics',
+};
+
+const departments = [
+  { name:'School of Social Work', campus:'Mumbai', programmes:9, icon:'SW', desc:'Social work specialisations including Mental Health, Disability, Public Health, Women-Centred Practice, and more.' },
+  { name:'School of Management and Labour Studies', campus:'Mumbai', programmes:3, icon:'ML', desc:'Social Entrepreneurship, Labour Studies & Practice, and Analytics.' },
+  { name:'Jamsetji Tata School of Disaster Studies', campus:'Mumbai', programmes:2, icon:'DS', desc:'Disaster Management and Disaster & Climate Risk Assessment for Sustainability.' },
+  { name:'School of Development Studies', campus:'Mumbai', programmes:2, icon:'DV', desc:"Development Studies and Women's Studies." },
+  { name:'School of Education', campus:'Mumbai', programmes:3, icon:'ED', desc:'MA Education, B.Ed-M.Ed (Integrated 3-year), M.Ed (2-year lateral entry).' },
+  { name:'School of Habitat Studies', campus:'Mumbai', programmes:4, icon:'HS', desc:'Environment & Climate Change, Regulatory Policy, Water Policy, Urban Policy & Governance.' },
+  { name:'School of Health System Studies', campus:'Mumbai', programmes:3, icon:'HL', desc:'MPH in Health Administration, Social Epidemiology, and Health Policy, Economics & Finance.' },
+  { name:'School of Human Ecology', campus:'Mumbai', programmes:1, icon:'HE', desc:'MA Applied Psychology (Clinical and Counselling Practice).' },
+  { name:'School of Law, Rights and Constitutional Governance', campus:'Mumbai', programmes:1, icon:'LW', desc:'LL.M in Access to Justice.' },
+  { name:'School of Media and Cultural Studies', campus:'Mumbai', programmes:1, icon:'MC', desc:'MA Media and Cultural Studies.' },
+  { name:'Centre for Library and Information Management Studies', campus:'Mumbai', programmes:1, icon:'LI', desc:'Master of Library and Information Science (MLISc).' },
+  { name:'School of Rural Development', campus:'Tuljapur', programmes:1, icon:'RD', desc:'MA Social Work (Rural Development).' },
+  { name:'School of Educational Studies', campus:'Hyderabad', programmes:1, icon:'ES', desc:'MA Education.' },
+  { name:'School of Gender and Livelihoods', campus:'Hyderabad', programmes:2, icon:'GL', desc:'MA Livelihoods in Gender & Development and Rural Development.' },
+  { name:'School of Public Policy and Governance', campus:'Hyderabad', programmes:5, icon:'PP', desc:'MA Cities & Governance, Natural Resources & Governance, Public Policy & Governance, Public Policy & Law, and Integrated MA+LLM.' },
+  { name:'School of Social Sciences and Humanities', campus:'Guwahati', programmes:3, icon:'SH', desc:'MA Ecology, Sociology & Social Anthropology, Peace & Conflict Studies.' },
+  { name:'School of Social Work (Guwahati)', campus:'Guwahati', programmes:4, icon:'SW', desc:'MA Social Work in Community Organisation, Livelihoods, Counselling, and Public Health.' },
+];
+
+// ..................................................
+// NAVIGATION
+// ..................................................
+
+// AdSense configuration:
+// 1) Put your real values for `client` and `slot`
+// 2) Set `enabled: true`
+const ADSENSE_CONFIG = {
+  enabled: false,
+  client: 'ca-pub-XXXXXXXXXXXXXXXX',
+  slot: '1234567890',
+};
+
+function injectTopBannerAds() {
+  const sections = document.querySelectorAll('main section');
+  sections.forEach(section => {
+    if (!section) return;
+
+    const sectionName = section.id ? section.id.toUpperCase() : 'SECTION';
+    const createBanner = (positionLabel) => {
+      const wrap = document.createElement('div');
+      wrap.className = positionLabel === 'bottom' ? 'menu-ad-wrap menu-ad-wrap-bottom' : 'menu-ad-wrap';
+      if (ADSENSE_CONFIG.enabled) {
+        wrap.innerHTML = `
+          <ins class="adsbygoogle menu-ad"
+               style="display:block"
+               data-ad-client="${ADSENSE_CONFIG.client}"
+               data-ad-slot="${ADSENSE_CONFIG.slot}"
+               data-ad-format="horizontal"
+               data-full-width-responsive="true"></ins>
+        `;
+      } else {
+        wrap.innerHTML = `<div class="menu-ad menu-ad-placeholder">Banner Ad Placeholder (${positionLabel}) - ${sectionName}</div>`;
+      }
+      return wrap;
+    };
+
+    if (!section.querySelector('.menu-ad-wrap[data-pos="top"]')) {
+      const topAd = createBanner('top');
+      topAd.setAttribute('data-pos', 'top');
+      section.insertBefore(topAd, section.firstChild);
+      if (ADSENSE_CONFIG.enabled && window.adsbygoogle) (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+
+    if (!section.querySelector('.menu-ad-wrap[data-pos="bottom"]')) {
+      const bottomAd = createBanner('bottom');
+      bottomAd.setAttribute('data-pos', 'bottom');
+      section.appendChild(bottomAd);
+      if (ADSENSE_CONFIG.enabled && window.adsbygoogle) (window.adsbygoogle = window.adsbygoogle || []).push({});
+    }
+  });
+}
+
+function showSection(id) {
+  document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('nav a').forEach(a => {
+    a.classList.toggle('active', a.getAttribute('onclick').includes(id));
+  });
+  window.scrollTo({ top: document.querySelector('header').offsetHeight + document.querySelector('.hero').offsetHeight, behavior: 'smooth' });
+}
+
+// ..................................................
+// RENDER COURSES
+// ..................................................
+
+const campusClass = { Mumbai:'tag-mumbai', Hyderabad:'tag-hyd', Guwahati:'tag-guw', Tuljapur:'tag-tulj' };
+
+function renderCourses(data) {
+  const tbody = document.getElementById('coursesBody');
+  if (!data.length) {
+    tbody.innerHTML = '';
+    document.getElementById('noResults').style.display = 'block';
+    return;
+  }
+  document.getElementById('noResults').style.display = 'none';
+  tbody.innerHTML = data.map(p => `
+    <tr>
+      <td style="color:var(--gray-400);font-family:var(--mono)">${p.id}</td>
+      <td style="font-weight:600; color:var(--navy); max-width:280px">${p.name}</td>
+      <td style="font-size:13px; color:var(--gray-400)">${p.school}</td>
+      <td><span class="pill pill-gold">${p.degree}</span></td>
+      <td style="text-align:center; font-weight:600">${p.intake}</td>
+      <td><span class="campus-tag ${campusClass[p.campus]}">${p.campus}</span></td>
+      <td>${p.codes.map(c => `<span class="pill">${c}</span>`).join('')}</td>
+    </tr>
+  `).join('');
+}
+
+let currentCampusFilter = 'all';
+let currentSearch = '';
+
+function filterCourses(campus, btn) {
+  document.querySelectorAll('#campusFilters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  currentCampusFilter = campus;
+  applyFilters();
+}
+
+function searchCourses() {
+  currentSearch = document.getElementById('courseSearch').value.toLowerCase();
+  applyFilters();
+}
+
+function applyFilters() {
+  let data = programmes;
+  if (currentCampusFilter !== 'all') data = data.filter(p => p.campus === currentCampusFilter);
+  if (currentSearch) data = data.filter(p =>
+    p.name.toLowerCase().includes(currentSearch) ||
+    p.school.toLowerCase().includes(currentSearch) ||
+    p.degree.toLowerCase().includes(currentSearch) ||
+    p.codes.some(c => c.toLowerCase().includes(currentSearch))
+  );
+  renderCourses(data);
+}
+
+// ..................................................
+// RENDER DEPARTMENTS
+// ..................................................
+
+function renderDepts() {
+  const grid = document.getElementById('deptGrid');
+  grid.innerHTML = departments.map(d => `
+    <div class="card">
+      <div class="card-header">
+        <span style="font-size:24px">${d.icon}</span>
+        <h3>${d.name}</h3>
+        <span class="badge">${d.programmes} prog${d.programmes>1?'s':''}</span>
+      </div>
+      <div class="card-body">
+        <p style="font-size:13px; color:var(--gray-400); margin-bottom:10px">${d.desc}</p>
+        <span class="campus-tag ${campusClass[d.campus]}">${d.campus} Campus</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ..................................................
+// RENDER TEST CODES
+// ..................................................
+
+function renderCodes(data) {
+  document.getElementById('codesBody').innerHTML = data.map(p => `
+    <tr>
+      <td style="font-weight:600;color:var(--navy);max-width:260px">${p.name}</td>
+      <td><span class="campus-tag ${campusClass[p.campus]}">${p.campus}</span></td>
+      <td>${p.codes.map(c=>`<span class="pill">${c}</span>`).join('')}</td>
+    </tr>
+  `).join('');
+}
+
+function searchCodes() {
+  const q = document.getElementById('codeSearch').value.toLowerCase();
+  const data = programmes.filter(p =>
+    p.name.toLowerCase().includes(q) ||
+    p.codes.some(c => c.toLowerCase().includes(q))
+  );
+  renderCodes(data);
+}
+
+function renderCodeRef() {
+  const grid = document.getElementById('codeRef');
+  const allCodes = [...new Set(programmes.flatMap(p => p.codes))].sort();
+  grid.innerHTML = allCodes.map(c => `
+    <div class="card" style="padding:0">
+      <div style="padding:14px 18px; border-bottom:1px solid var(--gray-200); display:flex; align-items:center; gap:10px">
+        <span class="pill" style="font-size:13px; padding:4px 12px">${c}</span>
+      </div>
+      <div style="padding:12px 18px; font-size:13px; color:var(--gray-700)">
+        ${codeDescriptions[c] || 'Refer NTA CUET-PG subject list'}
+      </div>
+    </div>
+  `).join('');
+}
+
+// ..................................................
+// CUTOFF TABLE (Excel/CSV upload)
+// ..................................................
+
+let cutoffData = [];
+
+function loadExcel(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const text = e.target.result;
+    parseCSV(text);
+  };
+
+  if (file.name.endsWith('.csv')) {
+    reader.readAsText(file);
+  } else {
+    // For xlsx, try reading as text (basic) or guide user
+    reader.readAsText(file);
+  }
+}
+
+function parseCSV(text) {
+  const lines = text.trim().split('\n').map(l => l.split(',').map(c => c.trim().replace(/^"|"$/g,'')));
+  if (lines.length < 2) return;
+  const headers = lines[0];
+  const rows = lines.slice(1);
+  cutoffData = rows;
+
+  const head = document.getElementById('cutoffHead');
+  head.innerHTML = '<tr>' + headers.map(h => `<th>${h}</th>`).join('') + '</tr>';
+
+  renderCutoffRows(rows);
+  document.querySelector('.cutoff-placeholder').style.display = 'none';
+  document.getElementById('cutoffTableWrap').style.display = 'block';
+}
+
+function renderCutoffRows(rows) {
+  document.getElementById('cutoffBody').innerHTML = rows.map(row =>
+    '<tr>' + row.map((cell, i) => {
+      const num = parseFloat(cell);
+      if (i > 0 && !isNaN(num)) {
+        const color = num >= 80 ? '#065f46' : num >= 60 ? '#1e40af' : num >= 40 ? '#92600a' : '#991b1b';
+        return `<td style="font-weight:600; color:${color}; font-family:'DM Mono',monospace">${cell}</td>`;
+      }
+      return `<td style="${i===0?'font-weight:600;color:var(--navy)':''}">${cell}</td>`;
+    }).join('') + '</tr>'
+  ).join('');
+}
+
+function searchCutoff() {
+  const q = document.getElementById('cutoffSearch').value.toLowerCase();
+  const filtered = cutoffData.filter(row => row.some(cell => cell.toLowerCase().includes(q)));
+  renderCutoffRows(filtered);
+}
+
+function clearCutoff() {
+  cutoffData = [];
+  document.querySelector('.cutoff-placeholder').style.display = 'block';
+  document.getElementById('cutoffTableWrap').style.display = 'none';
+}
+
+function loadSampleCutoff() {
+  const sampleCSV = `Programme,Campus,General Cutoff,OBC (NC) Cutoff,SC Cutoff,ST Cutoff,EWS Cutoff
+MA Social Work (Children and Families),Mumbai,75.50,65.25,52.00,45.00,68.00
+MA Social Work (Mental Health),Mumbai,80.00,70.50,58.00,50.00,73.00
+MA Development Studies,Mumbai,78.25,68.00,55.00,48.00,71.00
+MPH Health Administration,Mumbai,72.00,62.00,50.00,43.00,65.00
+MA Applied Psychology,Mumbai,85.50,76.00,63.00,55.00,78.00
+LL.M in Access to Justice,Mumbai,70.00,60.00,47.00,40.00,63.00
+MA Social Work (Rural Development),Tuljapur,65.00,55.00,42.00,35.00,58.00
+MA Public Policy and Governance,Hyderabad,74.00,64.00,51.00,44.00,67.00
+MA Ecology Env. & Sustainable Dev.,Guwahati,60.00,50.00,37.00,30.00,53.00`;
+  parseCSV(sampleCSV);
+}
+
+// ..................................................
+// INIT
+// ..................................................
+
+renderCourses(programmes);
+renderDepts();
+renderCodes(programmes);
+renderCodeRef();
+injectTopBannerAds();
+</script>
+</body>
+</html>
+
+
+
